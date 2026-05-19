@@ -39,13 +39,16 @@
   "dependencies": {
     "mammoth": "^1.12.0",
     "pdf-parse": "^2.4.5",
-    "werift": "^0.22.9",
     "ws": "^8.20.0",
-    "xlsx": "^0.18.5"
+    "@roamhq/wrtc": "^0.10.0",
+    "@e965/xlsx": "^0.20.3"
   },
   "devDependencies": {
-    "@electron/packager": "^19.1.0",
-    "electron": "33.4.11",
-    "electron-builder": "^25.0.0"
+    "@electron/packager": "^20.0.0",
+    "electron": "^42.1.0",
+    "electron-builder": "^26.8.1"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "^0.9.10"
   }
 }

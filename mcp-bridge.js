@@ -8,7 +8,7 @@
  * - Approval gate for sensitive files
  */
 
-const { RTCPeerConnection } = require('werift');
+const { RTCPeerConnection } = require('@roamhq/wrtc');
 const WebSocket = require('ws');
 const fs = require('fs');
 const path = require('path');
@@ -17,7 +17,7 @@ const path = require('path');
 let pdfParse, mammoth, XLSX;
 try { pdfParse = require('pdf-parse'); } catch (e) { console.warn('[Bridge] pdf-parse not available'); }
 try { mammoth = require('mammoth'); } catch (e) { console.warn('[Bridge] mammoth not available'); }
-try { XLSX = require('xlsx'); } catch (e) { console.warn('[Bridge] xlsx not available'); }
+try { XLSX = require('@e965/xlsx'); } catch (e) { console.warn('[Bridge] xlsx not available'); }
 
 let pc = null;
 let dc = null;
